@@ -1,0 +1,9 @@
+QuizApp/BussinessLogic/bin/*
+QuizApp/BussinessLogic/obj/*
+QuizApp/DataAccess/bin/*
+QuizApp/DataAccess/obj/*
+QuizApp/QuizAPI/bin/*
+QuizApp/QuizAPI/obj/*
+QuizApp/.vs/*
+
+

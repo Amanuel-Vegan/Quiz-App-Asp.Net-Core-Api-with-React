@@ -2,6 +2,7 @@ using BussinessLogic.IRepository;
 using BussinessLogic.Repository;
 using DataAccess;
 using DataAccess.Data;
+using DataAccess.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Data.SqlClient;
@@ -30,6 +31,7 @@ namespace QuizAPI
             AddDbContext(services);
             services.AddControllers();
             services.AddScoped<IRepository<Questions>, QuestionRepository>();
+            services.AddScoped<IRepository<Participant>, ParticipantRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "QuizAPI", Version = "v1" });
